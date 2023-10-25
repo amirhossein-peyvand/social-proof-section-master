@@ -1,0 +1,52 @@
+.mainContainer {
+  min-width: 200px;
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 0;
+  flex-direction: column;
+  row-gap: 4rem;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    .ratingContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .mainContainer {
+    width: 90%;
+    max-width: 130rem;
+    margin: 0 auto;
+    row-gap: 5rem;
+    padding: 0;
+
+    .top {
+      flex-direction: row;
+      align-items: center;
+
+      .ratingContainer {
+        width: 50%;
+        align-items: center;
+      }
+    }
+
+    .bottom {
+      flex-direction: row;
+      column-gap: 2rem;
+    }
+  }
+}

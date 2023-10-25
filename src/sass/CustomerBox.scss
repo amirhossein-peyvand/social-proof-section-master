@@ -1,0 +1,51 @@
+@import "./colors.scss";
+
+.box {
+  background-color: $very-dark-magenta;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+
+  .customerInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    img {
+      width: 3.5rem;
+      border-radius: 50%;
+    }
+
+    .infoContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+
+      .fullName,
+      .verified {
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .fullName {
+        font-size: 1.2rem;
+        color: $white;
+      }
+
+      span:not(.fullName) {
+        font-size: 1.1rem;
+        color: $soft-pink;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .text {
+    font-size: 1.3rem;
+    color: $light-grayish-magenta;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+  }
+}
